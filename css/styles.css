@@ -1,12 +1,22 @@
+/* --------------------------
+  Base Styles
+--------------------------- */
 * {
   box-sizing: border-box;
 }
 body {
   font-family: "Roboto", sans-serif;
+  color: #4a4a4a;
 }
-.name {
-  margin-bottom: 2rem;
-  font-weight: 900;
+h1 {
+  padding-bottom: 1.5rem;
+}
+h2 {
+  margin: auto 0;
+  padding: 1rem 0;
+}
+h3 {
+  font-weight: 500;
 }
 ul {
   margin: 0;
@@ -16,87 +26,89 @@ ul {
 a {
   text-decoration: none;
 }
-.container,
-.main-header,
-.main-footer {
-  padding: 2rem .7rem;
-  text-align: center;
+p {
+  color: #7f7f7f;
+  font-weight: 300;
 }
+/* --------------------------
+  Class Styles
+--------------------------- */
 .main-header,
 .main-footer {
   background: #fafafa;
 }
+.container,
+.main-header,
 .main-footer {
-  padding-bottom: 0;
+  padding: 1.5rem .8rem;
+  text-align: center;
+}
+.small-bold-upper {
+  font-size: .9rem;
+  font-weight: 900;
+  text-transform: uppercase;
+}
+/* --------------------------
+  Header Styles
+--------------------------- */
+.name {
+  font-weight: 900;
 }
 li {
   margin-bottom: 7px;
   padding: 10px;
   background: white;
 }
-li:last-child {
-    margin-top: 0;
-}
 li a {
   text-transform: uppercase;
   font-weight: bolder;
 }
-.profile-pic {
-  width: 65%;
-  margin: 1.2rem 0;
-}
 .intro {
-  margin: 0;
+  margin-top: 2rem;
 }
-.sub-heading {
-  font-size: 1rem;
-  text-transform: uppercase;
-  font-weight: 900;
+.profile-pic {
+  align-self: center;
+  width: 70%;
 }
-h3 {
-    font-weight: 500;
-}
-h2 {
-    margin: auto 0;
-    padding: 1rem 0;
+/* --------------------------
+  Main Styles
+--------------------------- */
+section {
+  margin: 1.5rem 0;
 }
 .images {
   width: 95%;
 }
-section {
-  margin: 1.5rem 0;
+/* --------------------------
+  Footer Styles
+--------------------------- */
+.main-footer {
+  padding-bottom: 0;
 }
 .hoz-line {
   width: 95%;
   height: 1px;
   background: gray;
-  margin: 0 auto;
-}
-p {
-  color: #7f7f7f;
-  font-weight: 300;
-}
-h1,
-h2,
-h3,
-a,
-.bot-bar p {
-  color: #4a4a4a;
+  margin: 4rem auto 0;
 }
 .contact-details {
-    padding-top: .5rem;
+  padding-top: .5rem;
 }
-.bot-bar {
-    margin-top: 4rem;
+span {
+  font-weight: 900;
+  margin-left: 1rem;
 }
-#name, #back-to-top {
-    font-size: .9rem;
-    font-weight: 900;
-}
-#back-to-top {
-    text-transform: uppercase;
+/* --------------------------
+  Flex Styles
+--------------------------- */
+.main-header,
+.main-nav,
+.intro {
+  display: flex;
+  flex-direction: column;
 }
 .bot-flex {
     display: flex;
     justify-content: space-between;
+    padding: .5rem 2.5%;
 }
