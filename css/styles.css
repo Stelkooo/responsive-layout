@@ -9,6 +9,7 @@ body {
   color: #4a4a4a;
 }
 h1 {
+  font-size: 1rem;
   padding-bottom: 1.5rem;
 }
 h2 {
@@ -37,22 +38,34 @@ p {
 .main-footer {
   background: #fafafa;
 }
+.portfolio {
+  background: lavender;
+}
+.skills {
+  background: lightgreen;
+}
 .container,
 .main-header,
 .main-footer {
-  padding: 1.5rem .8rem;
+  padding: 1.5rem 0.8rem;
   text-align: center;
 }
 .small-bold-upper {
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: 900;
   text-transform: uppercase;
 }
 /* --------------------------
   Header Styles
 --------------------------- */
-.name {
+.name,
+.bot-name {
   font-weight: 900;
+  color: #8e2be8;
+  font-family: "Press Start 2P", cursive;
+}
+.bot-name {
+  font-size: 0.9rem;
 }
 li {
   margin-bottom: 7px;
@@ -62,6 +75,9 @@ li {
 li a {
   text-transform: uppercase;
   font-weight: bolder;
+}
+li:hover {
+  background: lavender;
 }
 .intro {
   margin-top: 2rem;
@@ -94,7 +110,7 @@ section {
   background: gray;
 }
 .contact-details {
-  padding-top: .1rem;
+  padding-top: 0.1rem;
 }
 span {
   font-weight: 900;
@@ -114,8 +130,8 @@ span {
   flex-direction: column;
 }
 .bot-flex {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 }
 /* --------------------------
   Media Queries
@@ -133,11 +149,11 @@ span {
     justify-content: center;
   }
   li {
-    margin: 0 .5rem;
+    margin: 0 0.5rem;
     background: transparent;
   }
   .intro {
-    padding: 0 .8rem;
+    padding: 0 0.8rem;
     align-items: stretch;
   }
   .profile-pic {
@@ -148,10 +164,12 @@ span {
     text-align: left;
     font-size: 1.25rem;
     margin-top: 0;
-    padding-right: .7rem;
+    padding-right: 0.7rem;
   }
   .main-flex {
-    flex-flow: row wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
   }
   .main-flex section {
     width: 50%;
