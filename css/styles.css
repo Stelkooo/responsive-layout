@@ -67,14 +67,14 @@ li a {
   margin-top: 2rem;
 }
 .profile-pic {
-  align-self: center;
   width: 70%;
+  align-self: center;
 }
 /* --------------------------
   Main Styles
 --------------------------- */
 section {
-  margin: 1.5rem 0;
+  margin-top: 1.5rem;
 }
 .images {
   width: 95%;
@@ -85,30 +85,92 @@ section {
 .main-footer {
   padding-bottom: 0;
 }
-.hoz-line {
+.bot-bar {
   width: 95%;
-  height: 1px;
-  background: gray;
   margin: 4rem auto 0;
 }
+.hoz-line {
+  height: 1px;
+  background: gray;
+}
 .contact-details {
-  padding-top: .5rem;
+  padding-top: .1rem;
 }
 span {
   font-weight: 900;
   margin-left: 1rem;
 }
+.bot-links {
+  display: none;
+}
 /* --------------------------
   Flex Styles
 --------------------------- */
-.main-header,
+.nav-bar,
 .main-nav,
-.intro {
+.intro,
+.main-flex {
   display: flex;
   flex-direction: column;
 }
 .bot-flex {
     display: flex;
     justify-content: space-between;
-    padding: .5rem 2.5%;
+}
+/* --------------------------
+  Media Queries
+--------------------------- */
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+  .main-header {
+    padding: 3rem 0;
+  }
+  .main-nav,
+  .intro {
+    flex-direction: row;
+    justify-content: center;
+  }
+  li {
+    margin: 0 .5rem;
+    background: transparent;
+  }
+  .intro {
+    padding: 0 .8rem;
+    align-items: stretch;
+  }
+  .profile-pic {
+    order: 1;
+    width: 300px;
+  }
+  .about-student {
+    text-align: left;
+    font-size: 1.25rem;
+    margin-top: 0;
+    padding-right: .7rem;
+  }
+  .main-flex {
+    flex-flow: row wrap;
+  }
+  .main-flex section {
+    width: 50%;
+  }
+  .contact-us p {
+    font-size: 1.25rem;
+    padding: 0 5rem;
+  }
+  .bot-bar {
+    padding-bottom: 2rem;
+  }
+  #back-to-top {
+    display: none;
+  }
+  .bot-links {
+    display: block;
+  }
+  .bot-links ul {
+    display: flex;
+    flex-direction: row;
+  }
 }
